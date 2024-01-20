@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <script src="fontawesome/js/all.js"></script>
+    <title>Info Cuaca</title>
+
+<!--
+
+Breezed Template
+
+https://templatemo.com/tm-543-breezed
+
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+    <link rel="stylesheet" href="css/templatemo-breezed.css">
+
+    <link rel="stylesheet" href="css/owl-carousel.css">
+
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    </head>
+
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/template.css" rel="stylesheet" />
+
+    <style>
+      .berita-list { display: grid; grid-template-columns: repeat(auto-fill,
+      minmax(300px, 1fr)); gap: 20px; } .berita-item { background-color: #fff;
+      border: 1px solid #e0e0e0; border-radius: 10px; padding: 20px; box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.1); transition: transform 0.2s; }
+      .berita-item:hover { transform: scale(1.02); } .berita-item h3 {
+      font-size: 1.5rem; margin: 0; color: #333; } .berita-item p { font-size:
+      1rem; color: #181212; } .berita-item a { text-decoration: none; color:
+      #080808; font-weight: bold; display: inline-block; margin-top: 10px; }
+      .berita-item a:hover { text-decoration: underline; }
+    </style>
+  </head>
+  
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
+      id="mainNav"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="/">Aplikasi Weather</a>
+        <button
+          class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-0 mx-lg-1"><a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="#portfolio"
+              >HOME</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="#about"
+              >ABOUT</a></li>
+            <li class="nav-item mx-0 mx-lg-1"><a
+                class="nav-link py-3 px-0 px-lg-3 rounded"
+                href="/berita"
+              >NEWS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+      <h1
+        class="masthead-heading text-uppercase mb-20 mt-20 pb-20 pt-20"
+      >News</h1>
+      <div class="container d-flex align-items-center flex-column">
+        <div class="main-content">
+          <div class="berita-list">
+            {{#each berita}}
+              <div class="berita-item">
+                <h3>{{title}}</h3>
+                <p>{{description}}</p>
+                <a href="{{url}}" target="_blank">Baca selengkapnya</a>
+                <img
+                  src="{{image}}"
+                  alt=""
+                  srcset=""
+                  style="width: 250px; height: 250px;"
+                />
+              </div>
+            {{/each}}
+          </div>
+        </div>
+        <!-- Masthead Heading-->
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">Created By Riva Febtriani
+          </p>
+      </div>
+    </header>
+  </body>
+</html>
